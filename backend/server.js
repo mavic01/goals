@@ -1,11 +1,13 @@
 const express = require("express")
 const dotenv = require("dotenv").config()
 const { errorHandler } = require("./middleware/errorMiddleware")
-const mongoose = require("mongoose")
+const connectDB = require("./config/db")
 const colors = require("colors")
 const PORT = process.env.PORT || 8000
 const goalRoutes = require("./routes/goalRoutes")
 const { urlencoded } = require("body-parser")
+
+connectDB()
 
 const app = express()
 
