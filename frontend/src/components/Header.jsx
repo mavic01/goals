@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="logo">
-                <Link to="/">Goal Setter</Link>
+                <Link to="/"><span style={{color: "skyblue"}}>Mavic</span> Goal Setter</Link>
             </div>
             <ul>
                 <li><Link to="/login"><FaSignInAlt /> Login</Link></li>
